@@ -2,10 +2,17 @@ public class Heart {
     // PROPERTIES
     private String color;
     //Add remaining heart properties here...
-
+    private int Size;
+    private String Sayings;
+    private int Calories;
+    private double Cost;
+    private int stock;
 
     // CONSTRUCTORS
-    public Heart() {} // This is the default contructor
+    public Heart() {
+        this.Size = 3;
+        this.Sayings = "Be My Friend (or else)";
+    } // This is the default contructor
     //Add overloaded Constructor here...
 
 
