@@ -54,8 +54,8 @@ public class Heart {
     public int getStock() {
         return this.stock;
     }
-    public void getReport(){
-        report();
+    public String getReport(){
+        return report();
     }
     //Add remaining Accessor methods here...
 
@@ -99,7 +99,6 @@ public class Heart {
     
     private String report() {
         return this.color + "\n" +
-        this.color + "\n" +
         this.Size + "\n" +
         this.Sayings + "\n" +
         this.Calories + "\n" +
@@ -108,4 +107,14 @@ public class Heart {
         this.stock; // Add other properties here as you add them to the class
     }
     //Write other methods here (if needed)...
+    public void adjStock(int stockDelta){
+        if(stockDelta > 0){
+           inStock(stockDelta); 
+        }
+        else{
+            System.out.println("cant change stock, stock below 0");
+        
+        }
+    }
+
 }
