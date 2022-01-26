@@ -1,3 +1,5 @@
+// Nice work! We'll be covering Lists and ArrayLists next week. You have a headstart ;)
+
 import java.util.ArrayList;
 
 public class HeartsClient {
